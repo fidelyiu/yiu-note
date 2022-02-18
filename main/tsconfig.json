@@ -5,6 +5,8 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
-        "skipLibCheck": true
-    }
+        "skipLibCheck": true,
+        "outDir": "../dist-main"
+    },
+    "include": ["../main/src/**/*.ts", "../main/src/**/*.d.ts"]
 }
