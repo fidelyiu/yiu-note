@@ -1,8 +1,8 @@
 {
     "name": "yiu-note",
-    "private": true,
-    "version": "0.0.0",
+    "version": "1.0.0",
     "scripts": {
+        "start": "electron .",
         "dev": "vite -c ./render/vite.config.ts",
         "build": "vue-tsc -p ./render/tsconfig.json --noEmit && vite build -c ./render/vite.config.ts",
         "preview": "vite preview -c ./render/vite.config.ts"
@@ -12,8 +12,12 @@
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.2.0",
+        "electron": "^17.0.1",
         "typescript": "^4.5.4",
         "vite": "^2.8.0",
         "vue-tsc": "^0.29.8"
-    }
+    },
+    "description": "A software for local management of note files.",
+    "author": "Fidel Yiu",
+    "license": "MIT"
 }
