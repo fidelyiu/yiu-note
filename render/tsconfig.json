@@ -12,5 +12,5 @@
         "lib": ["esnext", "dom"]
     },
     "include": ["render/src/**/*.ts", "render/src/**/*.d.ts", "render/src/**/*.tsx", "render/src/**/*.vue"],
-    "references": [{ "path": "./tsconfig.node.json" }]
+    "references": [{ "path": "./tsconfig.node.json", "main": "../main/tsconfig.json" }]
 }
