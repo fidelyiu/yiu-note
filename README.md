@@ -20,6 +20,11 @@ yarn还是使用1版本的。
 - [2版本文档](https://yarnpkg.com/)
 
 
+根目录下的`.yarnrc`文件是用来覆盖当前项目`yarn config list`配置的。
+
+如果是`npm`项目是`.npmrc`文件。
+
+
 # 2.编辑器建议
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
