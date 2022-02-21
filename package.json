@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "main:start": "electron ./dist-main/index.js",
-        "main:tsc": "tsc -p ./main/tsconfig.json",
+        "main:tsc": "tsc -w -p ./main/tsconfig.json",
         "render:dev": "vite -c ./render/vite.config.ts",
         "render:build": "vue-tsc -p ./render/tsconfig.json --noEmit && vite build -c ./render/vite.config.ts",
         "render:preview": "vite preview -c ./render/vite.config.ts"
