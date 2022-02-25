@@ -2,7 +2,8 @@
     "name": "yiu-note",
     "version": "1.0.0",
     "scripts": {
-        "main:start": "electron ./dist-main/index.js",
+        "main:start:dev": "cross-env NODE_ENV=development electron ./dist-main/index.js",
+        "main:start:prod": "cross-env NODE_ENV=production electron ./dist-main/index.js",
         "main:tsc": "tsc -w -p ./main/tsconfig.json",
         "render:dev": "vite -c ./render/vite.config.ts",
         "render:build": "vue-tsc -p ./render/tsconfig.json --noEmit && vite build -c ./render/vite.config.ts",
@@ -13,6 +14,7 @@
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.2.0",
+        "cross-env": "^7.0.3",
         "electron": "16.0.10",
         "typescript": "^4.5.4",
         "vite": "^2.8.0",

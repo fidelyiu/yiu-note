@@ -25,3 +25,11 @@ app.whenReady().then(() => {
 app.on("window-all-closed", function () {
     if (process.platform !== "darwin") app.quit();
 });
+
+if (process.env.NODE_ENV === "development") {
+    console.log("mode: development");
+} else if (process.env.NODE_ENV === "production") {
+    console.log("mode: production");
+} else {
+    console.log("mode: undefined");
+}
