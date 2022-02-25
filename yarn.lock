@@ -420,10 +420,10 @@ duplexer3@^0.1.4:
   resolved "https://mirrors.tencent.com/npm/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-electron@^17.0.1:
-  version "17.0.1"
-  resolved "https://mirrors.tencent.com/npm/electron/-/electron-17.0.1.tgz#e6c7ad2be26e7be8a5a9bac16b21920ad2671224"
-  integrity sha512-CBReR/QEOpgwMdt59lWCtj9wC8oHB6aAjMF1lhXcGew132xtp+C5N6EaXb/fmDceVYLouziYjbNcpeXsWrqdpA==
+electron@16.0.10:
+  version "16.0.10"
+  resolved "https://mirrors.tencent.com/npm/electron/-/electron-16.0.10.tgz#300fe18c0f8096d337e241a2503522011429326b"
+  integrity sha512-QSxkVpvSpLzhSVlPRVOoJc/O/ZsbZm64qvSJeXsYfaH4rQjqBJwAFPuHhbhxzrBDWjH6FrBiNNzWZufSoTz1QQ==
   dependencies:
     "@electron/get" "^1.13.0"
     "@types/node" "^14.6.2"
