@@ -1,5 +1,6 @@
 import electron = require("electron");
 import path = require("path");
+import { jsAdapter } from "./utils/file";
 
 const { app, BrowserWindow } = electron;
 
@@ -8,7 +9,7 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, "preload/index.js"),
+            preload: path.join(__dirname, jsAdapter("/preload/index.ts")),
         },
     });
     win.loadFile("../dist-render/index.html");
@@ -25,11 +26,3 @@ app.whenReady().then(() => {
 app.on("window-all-closed", function () {
     if (process.platform !== "darwin") app.quit();
 });
-
-if (process.env.NODE_ENV === "development") {
-    console.log("mode: development");
-} else if (process.env.NODE_ENV === "production") {
-    console.log("mode: production");
-} else {
-    console.log("mode: undefined");
-}

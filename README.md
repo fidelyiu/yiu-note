@@ -40,3 +40,13 @@ yarn还是使用1版本的。
 然而，如果你希望在`.vue`导入中获得实际的 prop 类型（例如在使用手动`h(..)`调用时获得 prop 验证）。
 
 你可以在 VSCode 中的命令行模块中运行 `Volar: Switch TS Plugin on/off` 来关闭或开启 Volar 的 `.vue` 文件的类型支持插件。 (貌似没用)
+
+## 主线程项目
+
+主线程项目中的路径注意事项：
+- preload的路径要使用结对路径，即文件在哪，就要从盘符开始算起.
+  - `path.join(__dirname, "/preload/index.js")`,
+  - `path.join(__dirname, jsAdapter("/preload/index.ts"))`,
+- 其他地方一般使用相对路径，其中相对路径这里使用`/`、`..`开头。
+  - `../dist-render/index.html`
+  - `/preload/index.ts`
