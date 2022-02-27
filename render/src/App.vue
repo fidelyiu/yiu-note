@@ -2,6 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
@@ -13,6 +14,11 @@ import HelloWorld from './components/HelloWorld.vue'
     <span id="chrome-version"></span>,
     and Electron
     <span id="electron-version"></span>.
+    <p>
+        <router-link to="/">Go to Home</router-link>
+        <router-link to="/about">Go to About</router-link>
+        <router-view></router-view>
+    </p>
 </template>
 
 <style>
