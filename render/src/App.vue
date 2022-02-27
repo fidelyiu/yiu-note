@@ -3,6 +3,9 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import { RouterLink, RouterView } from 'vue-router';
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -14,11 +17,12 @@ import { RouterLink, RouterView } from 'vue-router';
     <span id="chrome-version"></span>,
     and Electron
     <span id="electron-version"></span>.
-    <p>
+    <div>
         <router-link to="/">Go to Home</router-link>
         <router-link to="/about">Go to About</router-link>
+        <div>{{ t("你好") }}</div>
         <router-view></router-view>
-    </p>
+    </div>
 </template>
 
 <style>
